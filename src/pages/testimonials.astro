@@ -24,7 +24,7 @@ const primary = client.primaryColor || '#2d5a3d'
     <div style="max-width:1200px; margin:0 auto; position:relative; z-index:1">
       <div class="reveal">
         <span style={`color:#fff; background: ${primary}; padding: 0.5rem 1.25rem; border-radius: 100px; font-weight:800; font-size:0.85rem; text-transform:uppercase; letter-spacing: 0.1em; display:inline-block; margin-bottom:2rem`}>Client Stories</span>
-        <h1 style="font-size:clamp(3.5rem, 8vw, 5.5rem); font-weight:900; margin-bottom:1.5rem; letter-spacing: -2px; line-height:1; color: #fff;">Customer Feedback</h1>
+        <h1 style="font-size:clamp(2.5rem, 8vw, 5.5rem); font-weight:900; margin-bottom:1.5rem; letter-spacing: -2px; line-height:1; color: #fff; word-break: break-word;">Customer Feedback</h1>
         <p style="opacity: 0.9; font-size:1.3rem; max-width:800px; margin:0 auto; line-height:1.6; font-weight: 500;">Read about the experiences of homeowners who trusted us with their outdoor spaces.</p>
       </div>
     </div>
@@ -34,7 +34,7 @@ const primary = client.primaryColor || '#2d5a3d'
   <section style="padding:6rem 1.5rem; background:#fff">
     <div style="max-width:1200px; margin:0 auto">
       {testimonials.length > 0 ? (
-        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(350px, 1fr)); gap:2.5rem">
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 350px), 1fr)); gap:2.5rem">
           {testimonials.map((t: any) => (
             <div class="reveal" style="padding:3rem; border-radius:32px; border:1px solid #f3f4f6; background:#fff; position:relative; transition: all 0.4s ease;" onmouseover="this.style.borderColor=primary; this.style.transform='translateY(-5px)'" onmouseout="this.style.borderColor='#f3f4f6'; this.style.transform='translateY(0)'">
               <div style={`position:absolute; top:2rem; right:2rem; color:${primary}15; font-size:4rem; line-height:1; font-family:serif; pointer-events:none`}>&ldquo;</div>

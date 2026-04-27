@@ -43,7 +43,7 @@ const primary = client.primaryColor || "#4a1a6b";
         >Expertise & Care</span
       >
       <h1
-        style="font-size:clamp(3.5rem, 8vw, 5.5rem); font-weight:900; margin-bottom:2rem; letter-spacing: -2px; line-height:1; color: #fff;"
+        style="font-size:clamp(2.5rem, 8vw, 5.5rem); font-weight:900; margin-bottom:2rem; letter-spacing: -2px; line-height:1; color: #fff; word-break: break-word;"
       >
         Transforming Spaces <br /><span style={`opacity: 0.8`}
           >With Excellence</span
@@ -216,7 +216,7 @@ const primary = client.primaryColor || "#4a1a6b";
       </style>
 
       <div
-        style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:3rem; max-width: 1400px; margin: 0 auto;"
+        style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap:3rem; max-width: 1400px; margin: 0 auto;"
       >
         {
           displayServices.map((service: any, i: number) => (

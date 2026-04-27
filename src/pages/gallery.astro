@@ -27,7 +27,7 @@ const primary = client.primaryColor || '#2d5a3d'
   <section style="padding:6rem 1.5rem; background:#fff">
     <div style="max-width:1200px; margin:0 auto">
       {gallery.length > 0 ? (
-        <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(350px, 1fr)); gap:2rem">
+        <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(min(100%, 350px), 1fr)); gap:2rem">
           {gallery.map((item: any) => (
             <div class="reveal" style="border-radius:24px; overflow:hidden; border:1px solid #f3f4f6; background:#fff; transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 20px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 20px rgba(0,0,0,0.03)'">
               <div style="position:relative; overflow:hidden; aspect-ratio:4/3;">

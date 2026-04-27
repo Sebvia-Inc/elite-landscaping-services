@@ -432,7 +432,7 @@ const primary = client.primaryColor || "#4a1a6b";
       <!-- Mobile Nav -->
       <div
         id="mobile-nav"
-        style="display:none;flex-direction:column;padding:1.5rem;gap:1rem;background:#fff;border-top:1px solid #eee"
+        style="display:none;flex-direction:column;padding:1.5rem;gap:1rem;background:#fff;border-top:1px solid #eee;position:absolute;top:100%;left:0;width:100%;max-height:calc(100vh - 90px);overflow-y:auto;z-index:999;box-shadow:0 10px 30px rgba(0,0,0,0.1);"
       >
         <a href="/" class="nav-link">Home</a>
         <a href="/services" class="nav-link">Services</a>
@@ -487,7 +487,7 @@ const primary = client.primaryColor || "#4a1a6b";
     >
       <div class="container">
         <div
-          style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:4rem; margin-bottom:4rem"
+          style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap:4rem; margin-bottom:4rem"
         >
           <div style="grid-column: span 1.5">
             <h2
@@ -579,7 +579,7 @@ const primary = client.primaryColor || "#4a1a6b";
             >
               {client.phone}
             </p>
-            <p style="color:#9ca3af; font-size:0.95rem">{client.email}</p>
+            <p style="color:#9ca3af; font-size:0.95rem; word-break: break-word;">{client.email}</p>
           </div>
         </div>
 

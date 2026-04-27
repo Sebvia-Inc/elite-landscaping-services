@@ -46,7 +46,7 @@ const primary = client.primaryColor || "#4a1a6b";
   <section style="padding: 2rem 1.5rem 8rem; background: #fff;">
     <div class="container">
       {displayPosts.length > 0 ? (
-        <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(350px, 1fr)); gap:2.5rem">
+        <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(min(100%, 350px), 1fr)); gap:2.5rem">
           {displayPosts.map((post: any, i: number) => (
             <a 
               href={`/blog/${post.slug}`} 

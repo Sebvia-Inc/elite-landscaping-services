@@ -29,7 +29,7 @@ const primary = client.primaryColor || '#4a1a6b'
   <!-- Content Section -->
   <section class="reveal" style="padding:8rem 1.5rem">
     <div class="container">
-      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(350px, 1fr)); gap:5rem; align-items:center">
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 350px), 1fr)); gap:5rem; align-items:center">
         <div>
           <h2 style="font-size:2.5rem; font-weight:800; margin-bottom:2rem; letter-spacing: -1px;">Who We Are</h2>
           <p style="color:#4b5563; line-height:1.8; margin-bottom:1.5rem; font-size:1.1rem">
@@ -47,7 +47,7 @@ const primary = client.primaryColor || '#4a1a6b'
           </div>
         </div>
         
-        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:1.5rem">
+        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr)); gap:1.5rem">
           {[
             { number: '500+', label: 'Projects Completed' },
             { number: '10+', label: 'Years Experience' },
@@ -68,7 +68,7 @@ const primary = client.primaryColor || '#4a1a6b'
   <section class="reveal" style="padding:8rem 1.5rem; background:#f9fafb; border-radius: 60px; margin: 0 1.5rem;">
     <div class="container">
       <h2 style="font-size:2.5rem; font-weight:800; text-align:center; margin-bottom:5rem; letter-spacing: -1px;">Our Core Values</h2>
-      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:2rem">
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap:2rem">
         {[
           { icon: '🤝', title: 'Integrity', desc: 'We do what we say. Honest pricing, transparent processes, and no hidden surprises.' },
           { icon: '⭐', title: 'Quality', desc: 'We use the finest materials and stand behind our work with a 100% satisfaction guarantee.' },
